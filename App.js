@@ -6,7 +6,9 @@ export default class App extends Component {
   render() {
     return (
       <View>
-        <Judul></Judul>
+        <Judul title="BIODATA"/>
+        <Judul title="LOGIN"/>
+        <Judul title="FORM"/>
         <Text>Nama: Yesica Adelia Ramadani </Text>
         <Text>Kelas: XI_RPL 4 </Text>
         <Text>No.Absen: 34 </Text>

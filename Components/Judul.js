@@ -5,7 +5,7 @@ class Judul extends React.Component{
     render(){
         return (
             <Text style= {salon.Judul}
-                >BIODATA</Text>
+                >{this.props.title}</Text>
         )
     }
 }
@@ -14,7 +14,7 @@ const salon = {
     Judul: {
         color: '#f00',
         fontSize: 50,
-        backgroundColor: '#60D7F8'
+        backgroundColor: '#BEDEF0'
     }
 }
 export default Judul;
