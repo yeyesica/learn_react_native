@@ -1,40 +1,23 @@
-import React, {Component} from 'react';
-import { StyleSheet, Text, View, Image} from 'react-native';
-import Judul from './Components/Judul'
+import React, { Component } from 'react';
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
+import { StackNavigator } from 'react-navigation';
+import Settings from './src/Settings';
+import Home from './src/Home';
+
+const AppNavigator = StackNavigator({
+  SettingScreen: { screen: Settings },
+  HomeScreen: { screen: Home }
+});
 
 export default class App extends Component {
   render() {
     return (
-      <View>
-        <Judul title="BIODATA"/>
-        <Judul title="LOGIN"/>
-        <Judul title="FORM"/>
-        <Text>Nama: Yesica Adelia Ramadani </Text>
-        <Text>Kelas: XI_RPL 4 </Text>
-        <Text>No.Absen: 34 </Text>
-        <Image style={{width: 400, height:500}}
-        source={require('./1.jpg')}
-        />
-      </View>
+      <AppNavigator />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});

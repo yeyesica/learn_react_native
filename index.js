@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './Screen';
+import App from './App';
 
 AppRegistry.registerComponent('haihai34', () => App);
